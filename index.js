@@ -139,3 +139,20 @@ const hat = hoo ?? 100;
 
 console.log(hat); //0
 // Do you remember? While using logical OR (||) it was 100 ...
+
+// *************** When to use || or ?? ****************
+// *****************************************************
+
+function createSongAlbum(title, artist) {
+  return {
+    title: title ?? '(untitled)',
+    artist: artist ?? '(Unknown)',
+  };
+}
+
+const mySong = createSongAlbum('Dancing Queen', 'ABBA');
+
+const releaseDate = mySong?.releaseDate ?? '(Unknown)';
+
+console.log(`${mySong.title} was released on ${releaseDate}`);
+//Dancing Queen was released on (Unknown)

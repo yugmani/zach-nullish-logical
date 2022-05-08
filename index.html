@@ -16,7 +16,24 @@
       <em>logical</em> <strong>OR</strong>, but is more strict: it returns the
       <em>right operand only</em> if the left is null or undefined:
     </li>
-    <li></li>
+    <li>
+      <h3>When to Use Them? ( || or ?? )</h3>
+      <ul>
+        <li>
+          <strong>Logical OR ( || )operator</strong>: When creating default
+          values, you should only use the logical OR operator when you want all
+          <em>falsy</em> left operands to be considered invalid
+        </li>
+        <li>
+          <strong>Nullish Coalescing ( ?? ) operator</strong>: Use the nullish
+          coalescing operator to make it clear that the left operand should only
+          be <em>null</em> or <em>undefined</em> if it’s not truthy.
+        </li>
+        <li>
+          In addition, use <strong>??</strong> when using optional chaining:
+        </li>
+      </ul>
+    </li>
     <li></li>
   </ul>
   <a
